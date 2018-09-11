@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Address Book App</h1>
+      <h2>Enter your new friend's information:</h2>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Their name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Their address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phone">Their phone number... if you got it. </label>
+            <input id="phone" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn-info">Save Contact Info</button>
+        </form>
+      </div>
+
+      <div>
+        <div id="contact-list">
+          <h4>Contact List</h4>
+        </div>
+        <div class="address-list">
+          <p><span class="name"></span></p>
+          <p><span class="address"></span></p>
+          <p><span class="phone"></span>
+        </div>
+        <ul class="unstyled">
+        </ul>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
