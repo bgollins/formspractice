@@ -1,3 +1,8 @@
-#story {
+#letter {
   display:none;
+  font-family: Courier;
+  border: 4px;
+  border-color: black;
+  border-style: groove;
+  padding: 10px;
 }
