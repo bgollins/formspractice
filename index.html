@@ -5,27 +5,38 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Letter Writer</title>
+    <title>Dog Collars</title>
   </head>
   <body>
     <div class="container">
-      <h1>Let me write a letter to you...</h1>
+      <h1>Top Quality Collar for Your Pooch!</h1>
+      <h2>Choose your color:</h2>
       <div id="blanks">
         <form>
+          <select class="form-control" id="color">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Goldenrod</option>
+          </select>
           <div class="form-group">
             <label for="person1">Your name</label>
             <input id="person1" class="form-control" type="text">
           </div>
-
-          <button type="submit" class="btn-info">Show me the letter!</button>
+          <div class="form-group">
+            <label for="address">Your address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn-info">Submit your order</button>
         </form>
       </div>
 
       <div id="letter">
-        <h1>My letter to you</h1>
+        <h1>Confirmation of Your Order</h1>
         <p>Dear <span class="person1"></span>,</p>
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-        <p>Sincerely, Your Mortal Enemy</p>
+        <p>You ordered the <span class="color"></span> collar. Congrats!</p>
+        <p>Your address on file for delivery is: <span class="address"></span>
+        <p>Sincerely, Your Friendly Dog Collar Provider</p>
       </div>
     </div>
   </body>
